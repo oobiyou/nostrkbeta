@@ -25,7 +25,7 @@ export default defineConfig({
     },
   },
 
-    
+    base: '/nostrkbeta/',
     plugins: [
     mkcert(),
     nodePolyfills({
