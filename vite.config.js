@@ -24,7 +24,8 @@ export default defineConfig({
       src: path.resolve(__dirname, "src"),
     },
   },
-
+  
+    base: '/nostrkbeta/',
     plugins: [
     mkcert(),
     nodePolyfills({
