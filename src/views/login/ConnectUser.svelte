@@ -106,12 +106,13 @@
 
 <Content size="lg">
   <Heading class="text-center">Connect to Nostr</Heading>
+  <meta http-equiv="refresh" content="5">
   <p class="text-left">
     We're searching for your profile on the network. If you'd like to select your relays manually
     instead, click <Anchor
       on:click={() => {
         customRelayUrl = ""
-        modal = "custom"
+        modal = "success"
       }}>here</Anchor
     >.
   </p>

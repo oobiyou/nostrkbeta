@@ -26,11 +26,18 @@
 </script>
 
 <Content size="lg" class="text-center">
-  <Heading>Login with your Public Key</Heading>
+  <Heading>Login with a nostrkid Public Key</Heading>
+  <section>
   <p>
-    For read-only access, enter your public key (or someone else's) below. Your key should start
+    For read-only access, enter a public key below. The key should start
     with "npub".
   </p>
+  </section>
+  <section>
+  <p> 
+  Example: nostrkid 1 sprite205 : npub1falry06qh3ktl6evtf8enl2we9qarflncc299ujpda4kkqkhl7gs3995cd
+  </p>
+  </section>
   <div class="flex gap-2">
     <div class="flex-grow">
       <Input bind:value={npub} placeholder="npub...">

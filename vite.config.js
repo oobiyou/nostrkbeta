@@ -5,20 +5,27 @@ import mkcert from "vite-plugin-mkcert"
 import sveltePreprocess from "svelte-preprocess"
 import {svelte} from "@sveltejs/vite-plugin-svelte"
 import {nodePolyfills} from "vite-plugin-node-polyfills"
+import { env } from "process"
+
 
 export default defineConfig({
+  define: {
+  },
   server: {
+
     https: false,
   },
   build: {
     sourcemap: true,
+    
   },
   resolve: {
     alias: {
       src: path.resolve(__dirname, "src"),
     },
   },
-  plugins: [
+
+    plugins: [
     mkcert(),
     nodePolyfills({
       protocolImports: true,

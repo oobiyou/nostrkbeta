@@ -8,7 +8,7 @@
   import {toast, modal} from "src/app/ui"
   import {loadAppData} from "src/app"
 
-  let url = $modal.url
+  let url = import.meta.env.VITE_FORCE_RELAYS
 
   const submit = async e => {
     e.preventDefault()

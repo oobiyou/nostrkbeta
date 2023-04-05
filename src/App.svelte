@@ -67,8 +67,9 @@
 
   Object.assign(window, {cmd, user, keys, network, pool, sync, tables, bech32ToHex, hexToBech32})
 
-  export let url = ""
+  
 
+  export let url = ""
   let ready = false
   let scrollY
 
